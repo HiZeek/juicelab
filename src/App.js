@@ -4,6 +4,7 @@ import Notification from "./components/layout/Notification";
 import Hero from "./components/layout/Hero";
 import ExploreSection from "./components/layout/ExploreSection";
 import ReachUs from "./components/layout/ReachUs";
+import Testimonial from "./components/layout/Testimonial";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Notification />
       <Hero />
       <ExploreSection />
+      <Testimonial />
       <ReachUs />
       <Footer />
     </Fragment>

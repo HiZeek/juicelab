@@ -33,7 +33,7 @@ const ExploreSection = () => {
   ));
   return (
     <section className="bg-darkColor py-20">
-      <Container className="bg-lightBlue rounded-[48px]">
+      <Container className="bg-lightBlue relative z-10 rounded-[48px]">
         <div className="py-20 px-5">
           <div className="flex justify-center mb-[21px]">
             <p className="bg-lighterYellow rounded-[50%] w-[287px] text-center py-[17px] px-3 text-sm">

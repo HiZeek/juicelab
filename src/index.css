@@ -24,10 +24,43 @@
     font-family: "Space Mono", monospace;
   }
 
-  /* .explore-drinks > img:first-child {
-    transition: all 0.2s ease-in-out;
+  @keyframes moveUpDown {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-50px);
+    }
+    100% {
+      transform: translateY(0);
+    }
   }
-  .explore-drinks:hover > img:first-child {
-    transform: scale(1.1);
-  } */
+
+  .heart {
+    animation-name: moveUpDown;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+
+  @keyframes moveDownUp {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-50px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+  .orange {
+    animation-name: moveDownUp;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
 } ;
