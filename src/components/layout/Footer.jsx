@@ -32,7 +32,7 @@ const Footer = () => {
   return (
     <section className="bg-lightBlue">
       <Container>
-        <div className="py-20 px-5">
+        <div className="pt-20 px-5">
           <div className="grid grid-cols-1 md:grid-cols-3 md:gap-10 lg:grid-cols-5 gap-4 text-darkColor">
             <div className="md:col-span-2 lg:col-span-2">
               <img
@@ -76,11 +76,13 @@ const Footer = () => {
           <ul className="flex flex-col items-center gap-4 md:flex-row md:justify-center mb-5">
             {footerItem}
           </ul>
-          <p className="font-sans-serif font-bold text-darkColor text-center">
+        </div>
+        <div className="pt-14">
+          <p className="font-sans-serif font-bold text-darkColor text-center -mb-10">
             2023 Juice Labs. All right reserved.
           </p>
+          <img src={JUICELABS} className="px-5" alt="Juice Lab" />
         </div>
-        <img src={JUICELABS} className="px-5" alt="Juice Lab" />
       </Container>
     </section>
   );
