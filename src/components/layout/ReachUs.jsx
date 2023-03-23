@@ -53,38 +53,40 @@ const ReachUs = () => {
         </Container>
         <div className="max-w-[1480px] m-auto mt-[45px]">
           {!mediumSize && !smallSize && (
-            <div className="flex -mb-[35px] relative z-10">
-              <img
-                src={Olipop2}
-                alt="Olipop2"
-                className="w-[242px] h-[244px]"
-              />
-              <img
-                src={Olipop3}
-                alt="Olipop3"
-                className="w-[242px] h-[244px]"
-              />
-              <img
-                src={Olipop5}
-                alt="Olipop5"
-                className="w-[242px] h-[244px]"
-              />
-              <img
-                src={Olipop6}
-                alt="Olipop6"
-                className="w-[242px] h-[244px]"
-              />
-              <img
-                src={Olipop4}
-                alt="Olipop4"
-                className="w-[242px] h-[244px]"
-              />
-              <img
-                src={Olipop1}
-                alt="Olipop1"
-                className="w-[242px] h-[244px]"
-              />
-            </div>
+            <>
+              <div className="flex -mb-[35px] relative z-10">
+                <img
+                  src={Olipop2}
+                  alt="Olipop2"
+                  className="w-[242px] h-[244px]"
+                />
+                <img
+                  src={Olipop3}
+                  alt="Olipop3"
+                  className="w-[242px] h-[244px]"
+                />
+                <img
+                  src={Olipop5}
+                  alt="Olipop5"
+                  className="w-[242px] h-[244px]"
+                />
+                <img
+                  src={Olipop6}
+                  alt="Olipop6"
+                  className="w-[242px] h-[244px]"
+                />
+                <img
+                  src={Olipop4}
+                  alt="Olipop4"
+                  className="w-[242px] h-[244px]"
+                />
+                <img
+                  src={Olipop1}
+                  alt="Olipop1"
+                  className="w-[242px] h-[244px]"
+                />
+              </div>
+            </>
           )}
           {smallSize && (
             <div className="flex flex-col items-center mb-5">

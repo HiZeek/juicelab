@@ -78,7 +78,7 @@ const Footer = () => {
           </ul>
         </div>
         <div className="pt-14">
-          <p className="font-sans-serif font-bold text-darkColor text-center -mb-10">
+          <p className="font-sans-serif font-bold text-darkColor text-center -mb-6 md:-mb-10">
             2023 Juice Labs. All right reserved.
           </p>
           <img src={JUICELABS} className="px-5" alt="Juice Lab" />

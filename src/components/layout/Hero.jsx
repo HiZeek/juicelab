@@ -5,15 +5,17 @@ import Heart from "../../assets/heart.png";
 import Olipop from "../../assets/Olipop.png";
 import BlueButton from "../ui/BlueButton";
 import Header from "./Header";
+import TextSlider from "./TextSlider";
+import DarkerTextSlider from "./DarkerTextSlider";
 
 const Hero = () => {
   return (
-    <section className="bg-darkColor">
+    <section className="bg-darkColor relative">
       <Header />
       <Container>
         <div className="py-20 px-5">
           <img src={Delicious} alt="Delicious" />
-          <div className="flex flex-col justify-center gap-7 md:flex-row items-center md:-mt-16 lg:-mt-24">
+          <div className="flex flex-col justify-center gap-7 md:flex-row items-center md:-mt-16 lg:-mt-24 relative z-20">
             <img src={Heart} alt="Heart" className="w-[51px] h-[45px]" />
             <p className="font-sans-serif font-bold text-lg md:text-[30px] md:leading-[40px] lg:text-[45px] lg:leading-[40px] text-yellow">
               Healthy Drinks.
@@ -40,14 +42,13 @@ const Hero = () => {
             </p>
           </div>
         </div>
-        {/* <div>
-            <p></p>
-        </div>
-        <div></div> */}
-        {/* <marquee className="text-white" behavior="scroll" direction="bounce">
-          Low calories
-        </marquee> */}
       </Container>
+      <div className="hidden absolute bottom-[400px] -rotate-[5deg] z-10">
+        <TextSlider />
+      </div>
+      <div className="hidden absolute bottom-[360px] rotate-[3deg]">
+        <DarkerTextSlider />
+      </div>
     </section>
   );
 };
