@@ -14,10 +14,10 @@ import BlueButton from "../ui/BlueButton";
 const Testimonial = () => {
   return (
     <section className="bg-darkColor relative">
-      {/* <div className="max-w-[1480px] m-auto"> */}
-      <div className="absolute -top-[420px]">
-        <img src={BiggerEllipse} alt="BiggerEllipse" />
-        {/* </div> */}
+      <div className="max-w-[1480px] m-auto">
+        <div className="absolute -top-[180px] md:-top-[300px] lg:-top-[420px]">
+          <img src={BiggerEllipse} alt="BiggerEllipse" />
+        </div>
       </div>
       <Container>
         <div className="py-20 px-5">
