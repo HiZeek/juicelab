@@ -17,7 +17,7 @@ const Notification = () => {
               onClick={hidebanner}
               src={CloseBanner}
               alt="Close banner"
-              className="w-8 h-8 absolute right-0"
+              className="w-8 h-8 absolute right-0 cursor-pointer"
             />
           </div>
         )}

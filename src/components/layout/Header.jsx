@@ -9,8 +9,16 @@ const Header = () => {
     <section>
       <Container>
         <div className="flex justify-between items-center py-[30px] px-5">
-          <img src={Menu} alt="Menu Burger" className="w-16 h-14" />
-          <img src={Logo} alt="Juice Lab" className="w-[149px] h-[37px]" />
+          <img
+            src={Menu}
+            alt="Menu Burger"
+            className="w-16 h-14 cursor-pointer"
+          />
+          <img
+            src={Logo}
+            alt="Juice Lab"
+            className="w-[149px] h-[37px] cursor-pointer"
+          />
           <BlackButton className="hidden md:block">Shop now</BlackButton>
         </div>
       </Container>
