@@ -10,7 +10,7 @@ import DarkerTextSlider from "./DarkerTextSlider";
 
 const Hero = () => {
   return (
-    <section className="bg-darkColor relative">
+    <section className="bg-darkColor relative overflow-hidden">
       <Header />
       <Container>
         <div className="py-20 px-5">
@@ -42,12 +42,17 @@ const Hero = () => {
             </p>
           </div>
         </div>
+        <div className="md:hidden">
+          <TextSlider />
+        </div>
       </Container>
-      <div className="hidden absolute bottom-[400px] -rotate-[5deg] z-10">
-        <TextSlider />
-      </div>
-      <div className="hidden absolute bottom-[360px] rotate-[3deg]">
-        <DarkerTextSlider />
+      <div className="max-w-[1480px] m-auto hidden md:block">
+        <div className="absolute bottom-[550px] -left-20 -rotate-[5deg] z-10">
+          <TextSlider />
+        </div>
+        <div className="absolute bottom-[270px] -left-20 rotate-[3deg]">
+          <DarkerTextSlider />
+        </div>
       </div>
     </section>
   );
